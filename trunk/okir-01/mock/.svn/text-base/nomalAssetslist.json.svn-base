@@ -1,0 +1,44 @@
+[
+  {
+    "id" : 5,
+    "code" : "0101",
+    "parentId" : 1,
+    "nameCn" : "办公设备",
+    "comment" : null
+  },
+  {
+    "id" : 6,
+    "code" : "0102",
+    "parentId" : 1,
+    "nameCn" : "家具",
+    "comment" : null
+  },
+  {
+    "id" : 7,
+    "code" : "0103",
+    "parentId" : 1,
+    "nameCn" : "办公耗材",
+    "comment" : null
+  },
+  {
+    "id" : 8,
+    "code" : "0104",
+    "parentId" : 1,
+    "nameCn" : "测量仪器",
+    "comment" : null
+  },
+  {
+    "id" : 9,
+    "code" : "0105",
+    "parentId" : 1,
+    "nameCn" : "电脑",
+    "comment" : null
+  },
+  {
+    "id" : 10,
+    "code" : "0106",
+    "parentId" : 1,
+    "nameCn" : "卫生洁具",
+    "comment" : null
+  }
+]

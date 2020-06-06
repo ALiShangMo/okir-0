@@ -1,0 +1,18 @@
+[
+  {"empNo":"BD0020003","namecn":"楚风韩","dept":"北京人力资源部","reportTo":"-"},
+  {"empNo":"BD0010001","namecn":"刘青","dept":"北京开发部","reportTo":"-"},
+  {"empNo":"BD0010002","namecn":"王海川","dept":"北京开发部","reportTo":"BD0010001 刘青"},
+  {"empNo":"BD0010004","namecn":"王光伟","dept":"北京开发部","reportTo":"BD0010001 刘青"},
+  {"empNo":"BD0010006","namecn":"君迪","dept":"北京开发部","reportTo":"BD0010001 刘青"},
+  {"empNo":"BD0040007","namecn":"王枭","dept":"北京行政事业部","reportTo":"-"},
+  {"empNo":"BD0030005","namecn":"曲苗","dept":"北京财务部","reportTo":"-"},
+  {"empNo":"TD0010001","namecn":"田胜武","dept":"天津开发部","reportTo":"-"},
+  {"empNo":"TD0010002","namecn":"王川","dept":"天津开发部","reportTo":"TD0010001 田胜武"},
+  {"empNo":"TD0010003","namecn":"刘青","dept":"天津开发部","reportTo":"TD0010001 田胜武"},
+  {"empNo":"TD0010004","namecn":"张三","dept":"天津开发部","reportTo":"TD0010001 田胜武"},
+  {"empNo":"TD0010005","namecn":"王丹","dept":"天津人力资源部","reportTo":"-"},
+  {"empNo":"TD0010006","namecn":"何婷","dept":"天津开发部","reportTo":"-"},
+  {"empNo":"TD0010007","namecn":"郭彤","dept":"天津行政事业部","reportTo":"-"},
+  {"empNo":"TD0010008","namecn":"郭海","dept":"天津财务部","reportTo":"-"}
+
+]

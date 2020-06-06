@@ -1,0 +1,23 @@
+[
+  {
+    "id" : 14,
+    "code" : "0301",
+    "parentId" : 3,
+    "nameCn" : "住宅",
+    "comment" : null
+  },
+  {
+    "id" : 15,
+    "code" : "0302",
+    "parentId" : 3,
+    "nameCn" : "办公",
+    "comment" : null
+  },
+  {
+    "id" : 16,
+    "code" : "0303",
+    "parentId" : 3,
+    "nameCn" : "仓储",
+    "comment" : null
+  }
+]

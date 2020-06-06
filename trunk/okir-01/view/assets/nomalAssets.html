@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>普通资产页面</title>
+    <link rel="stylesheet" href="../../vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../../vendor/font-awesome/css/font-awesome.css">
+
+    <link rel="stylesheet" href="../../css/xjl.css">
+
+
+
+</head>
+<body>
+<ol class="breadcrumb">
+    <li><a href="index.html">主页</a></li>
+    <li><i class="fa fa-quora" aria-hidden="true"></i>基础信息管理</li>
+    <li class="active"><i class="fa fa-bandcamp" aria-hidden="true"></i>普通资产信息</li>
+</ol>
+<div class="container">
+<form class="form-horizontal">
+    <div class="form-group">
+
+        <label class="control-label col-md-1">资产分类</label>
+        <div class="col-md-3">
+            <div class="row">  <div class="col-md-6"> <select class="form-control" id="selnomalAssets">
+            </select></div>
+                <div class="col-md-6"> <select class="form-control" id="selnomal">
+                </select></div></div>
+
+        </div>
+        <label class="control-label col-md-1">资产名称</label>
+        <div class="col-md-3"><input class="form-control"/></div>
+
+        <label class="control-label col-md-1">资产编号</label>
+        <div class="col-md-3"><input class="form-control"/></div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-md-1">包装类型</label>
+        <div class="col-md-3"> <select class="form-control" id="selnom">
+            <!--<option>台</option>
+            <option>笔记本</option>-->
+        </select>
+        </div>
+        <label class="control-label col-md-1">供货商信息</label>
+        <div class="col-md-3"><input class="form-control"/></div>
+        <label class="control-label col-md-1">耗材</label>
+        <div class="col-md-3">
+            <div class="col-md-6">
+            <label class="radio-inline">
+            <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 是
+        </label>
+            <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 否
+            </label>
+            </div>
+            <button type="button" class=" btn btn-primary col-md-6" id="btnSearch">
+                <i class="fa fa-search" aria-hidden="true"></i>检索search</button>
+        </div>
+
+
+
+    </div>
+    <div class="btn-group" id="toolbar">
+
+        <button type="button" class="btn btn-success" id="btnadd">
+            <i class="fa fa-plus" aria-hidden="true"></i>新增资产 add</button>
+        <button type="button" class="btn btn-primary" id="btnlnstock">
+            <i class="fa fa-download" aria-hidden="true"></i>资产入库 lnstock</button>
+        <button type="button" class="btn btn-warning" id="btnEdit">
+            <i class="fa fa-pencil-square-o" aria-hidden="true"></i> 编辑资产 Edit</button>
+    </div>
+
+</form>
+</div>
+<div class="container">
+    <table id="tb1Resul"></table></div>
+
+<div class="modal fade" id="infor">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header"><span id="infoTitle"></span></div>
+            <div class="modal-body">
+                <div class="form-horizontal">
+                    <div class="form-group">
+                        <label class="control-label col-md-3" >资产编号</label>
+                       <div class="col-md-9">
+                           <input  class="form-control" id="tbxAssetsCode"/>
+                       </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3" >资产名称</label>
+                        <div class="col-md-8">
+                            <div class="input-group">
+                                <input  class="form-control" id="tbxAssetsName"/>
+                                <span class="input-group-addon ">*</span></div>
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3">资产分类</label>
+                        <div class="col-md-9">
+                            <div class="row">
+                                <div class="col-md-4">
+                                <select class="form-control" id="asset">
+                                    <option value="0">--请选择--</option>
+                                    <option value="1">办公设备</option>
+                                </select></div>
+                                <div class="col-md-4">
+                                    <select class="form-control" id="assets">
+                                        <option value="0">--请选择--</option>
+                                        <option value="1">打印机</option>
+                                        <option value="2">笔记本电脑</option>
+                                        <option value="3">教师用电脑</option>
+                                        <option value="4">激光打印</option>
+                                        <option value="5">SVN服务器</option>
+                                        <option value="6">联想E470C</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3">包装类型</label>
+                        <div class="col-md-9"> <select class="form-control" id="selPackageType">
+                            <option value="0">--请选择--</option>
+                            <option value="1">台</option>
+                            <option value="2">笔记本</option>
+                        </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3">品牌</label>
+                        <div class="col-md-9">
+                            <div class="input-group">
+                                <input  class="form-control" id="normalbrand"/>
+                                <span class="input-group-addon ">*</span></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3">型号</label>
+                        <div class="col-md-9">
+                            <div class="input-group">
+                                <input  class="form-control" id="normalmodel"/>
+                                <span class="input-group-addon ">*</span></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3">供货商名称</label>
+                        <div class="col-md-9">
+                            <div class="input-group">
+                                <input  class="form-control" id="supplier"/>
+                                <span class="input-group-addon ">*</span></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3" >供货商电话</label>
+                        <div class="col-md-9">
+                            <div class="input-group">
+                                <input  class="form-control" id="phone"/>
+                                <span class="input-group-addon ">*</span></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3">耗材</label>
+                        <div class="col-lg-3">
+                            <div class="input-group">
+                                <input class="form-control"/>
+                                <span class="input-group-btn">
+                                   <button class="btn btn-default" type="button">否</button>
+                                 </span>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3">其他说明</label>
+                            <div class="col-md-9">
+                                <textarea class="form-control" rows="3"></textarea>
+                            </div>
+
+                        </div>
+                </div>
+
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn btn-success">
+                    <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>保存 save</button>
+                <button class="btn btn-default">
+                    <i class="fa fa-times" aria-hidden="true"></i>取消 Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="info">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header"><span id="infoTit"></span></div>
+            <div class="modal-body">
+                <div class="form-horizontal">
+                    <div class="form-group">
+                        <label class="control-label col-md-3" >资产名称</label>
+                        <div class="col-md-9">
+                            <input  class="form-control" id="tbxAssetCode"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3" >入库数量</label>
+                        <div class="col-md-9">
+                            <div class="input-group">
+                                <input  class="form-control" id="tbxAssetName"/>
+                                <span class="input-group-addon ">*</span></div>
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3">资产分类</label>
+                        <div class="col-md-9">
+                            <div class="input-group">
+                                <span class="input-group-addon ">¥</span>
+                                <input  class="form-control" id="tbxAsse"/>
+                                <span class="input-group-addon ">*</span></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3">金额合计</label>
+                        <div class="col-md-9">
+                            <div class="input-group">
+                                <span class="input-group-addon ">¥</span>
+                                <input  class="form-control" id="tbxAss"/></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3">入库时间</label>
+                        <div class="col-md-9">
+                            <div class="input-group">
+                                <span class="input-group-addon ">*</span>
+                                <input  class="form-control" id="normal"/>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3">资产置办人</label>
+                        <div class="col-md-9">
+                            <select class="form-control" >
+                                <option value="0">请选择</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3">其他说明</label>
+                        <div class="col-md-9">
+                            <textarea class="form-control" rows="3"></textarea>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn btn-success">
+                    <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>保存 save</button>
+                <button class="btn btn-default">
+                    <i class="fa fa-times" aria-hidden="true"></i>取消 Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../../vendor/jquery/jquery.js"></script>
+<script src="../../js/logic/baseinfo/nomalAssets.js"></script>
+<script src="../../vendor/bootstrap/js/bootstrap.js"></script>
+<script src="../../vendor/bootstrap-table/bootstrap-table.js"></script>
+<script src="../../vendor/bootstrap-table/locale/bootstrap-table-zh-CN.js"></script>
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>车辆资产页面</title>
+    <link rel="stylesheet" href="../../vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../../vendor/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="../../vendor/bootstrap-table/bootstrap-table.css">
+    <link rel="stylesheet" href="../../css/assets/carAeeets.css">
+
+
+
+</head>
+<body>
+<ol class="breadcrumb">
+    <li><a href="#">主页</a></li>
+    <li>
+        <i class="fa fa-car" aria-hidden="true"></i>
+        车辆资产信息管理
+    </li>
+    <li class="active">
+        <i class="fa fa-cog" aria-hidden="true"></i>
+        车辆资产信息</li>
+</ol>
+
+<div class="container">
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label class="control-label col-md-1">资产分类:</label>
+            <div class="col-md-3">
+                <div class="col-md-6">
+                    <select class="form-control" id="selPowerType"></select>
+                </div>
+
+                <div class="col-md-6">
+                    <select class="form-control" id="selPowerType1"></select>
+                </div>
+            </div>
+
+
+            <label class="control-label col-md-1">资产名称:</label>
+            <div class="col-md-3">
+                <input class="form-control"/>
+            </div>
+
+            <label class="control-label col-md-1">资产编号:</label>
+            <div class="col-md-3">
+                <input class="form-control"/>
+            </div>
+
+
+        </div>
+
+        <div class="form-group">
+
+
+            <label class="control-label col-md-1 act">发动机类型:</label>
+            <div class="col-md-3">
+
+                <select class="form-control" id="selPowerType2"></select>
+
+            </div>
+
+
+            <label class="control-label col-md-1">品牌型号:</label>
+            <div class="col-md-2">
+                <input class="form-control"/>
+            </div>
+
+            <label class="control-label col-md-1">自动挡:</label>
+            <div class="col-md-2">
+                <input class="form-control"/>
+            </div>
+
+            <button type="button" class="btn btn-primary" id="btnSearch">
+                <i class="fa fa-search" aria-hidden="true"></i>
+                搜索Search</button>
+        </div>
+
+    </form>
+
+</div>
+
+<div class="container">
+    <table id="tbxBrandModel">
+
+    </table>
+
+    <div class="btn-group" id="toolbar">
+        <button class="btn btn-success " id="btnAdd">
+            <i class="fa fa-plus" aria-hidden="true"></i>
+            &nbsp&nbsp&nbsp新增资产&nbsp&nbsp&nbspAdd
+        </button>
+
+        <button type="button" class="btn btn-primary" id="btnInstock">
+            <i class="fa fa-download" aria-hidden="true"></i>
+            &nbsp&nbsp&nbsp资产入库&nbsp&nbsp&nbspInstock</button>
+
+        <button type="button" class="btn btn-info" id="btnEdit">
+            <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+            &nbsp&nbsp&nbsp编辑资产&nbsp&nbsp&nbspEdit</button>
+
+    </div>
+</div>
+
+
+
+<div class="modal fade" id="info">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+
+                <div class="fa fa-bar-chart" id="sourceInfo">
+                    资产信息
+                </div>
+
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label class="control-label col-md-3" id="sourcebianhao">
+
+                        </label>
+                        <div class="col-md-8">
+                            <input class="form-control" id="sourcebrand"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-md-3" id="sourcename">资产名称:</label>
+                        <div class="col-md-8">
+                        <div class="input-group ">
+                            <input class="form-control " aria-describedby="basic-addon" id="name">
+                                  <span class="input-group-addon" id="basic-addon">
+                                      <i class="fa fa-check" aria-hidden="true"></i>
+                                  </span>
+                            </input>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-md-3" id="sourceclassify">资产分类:</label>
+                        <div class="col-md-8">
+                            <div class="col-md-6">
+                                <select class="form-control" id="source"></select>
+                            </div>
+
+                            <div class="col-md-6">
+                                <select class="form-control" id="source1">
+                                    <option value="0">请选择...</option>
+                                    <option value="1">通勤班车</option>
+                                    <option value="2">其他</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-md-3" id="acttype">发动机类型:</label>
+                        <div class="col-md-8">
+                            <select class="form-control" id="source2">
+                                <option value="0">请选择...</option>
+                                <option value="1">混动</option>
+                                <option value="2">其他</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-md-3" id="carbrand">车辆品牌:</label>
+                        <div class="col-md-8">
+                        <div class="input-group">
+                            <input class="form-control " aria-describedby="basic-addon-1" id="brand">
+                                  <span class="input-group-addon" id="basic-addon-1">
+                                      <i class="fa fa-check" aria-hidden="true"></i>
+                                  </span>
+                            </input>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-md-3" id="carType">车辆型号:</label>
+                        <div class="col-md-8">
+                        <div class="input-group">
+                            <input class="form-control " aria-describedby="basic-addon" id="type">
+                            <span class="input-group-addon" id="basic-addon-2">
+                                      <i class="fa fa-check" aria-hidden="true"></i>
+                                  </span>
+                            </input>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group" >
+                        <label class="control-label col-md-3" id="sit">座位数:</label>
+                        <div class="col-md-8">
+                        <div class="input-group">
+                            <input class="form-control " aria-describedby="basic-addon">
+                            <span class="input-group-addon" id="basic-addon-3">
+                                      <i class="fa fa-check" aria-hidden="true"></i>
+                                  </span>
+                            </input>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group" id="a">
+                        <label class="control-label col-md-3" id="actbianhao">发动机编号:</label>
+                        <div class="col-md-8">
+                        <div class="input-group">
+                            <input class="form-control " aria-describedby="basic-addon" id="acthao">
+                            <span class="input-group-addon" id="basic-addon-4">
+                                      <i class="fa fa-check" aria-hidden="true"></i>
+                                  </span>
+                            </input>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group" id="ab">
+                        <label class="control-label col-md-3" id="active">自动挡:</label>
+                        <div class="col-md-4">
+                            <div class="input-group">
+                                <input class="form-control " aria-describedby="basic-addon" >
+                                <span class="input-group-addon" id="basic-addon-5">
+                                       <button id="yes">
+
+                                       </button>
+                                </span>
+                                </input>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-md-3" id="other">其他说明:</label>
+                        <div class="col-md-8">
+                            <input class="form-control"/>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">
+                    <i class="fa fa-floppy-o" aria-hidden="true"></i>
+                    &nbsp&nbsp保存&nbsp&nbspSave</button>
+                <button type="button" class="btn btn-group">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                    &nbsp&nbsp取消&nbsp&nbspCancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+<script src="../../vendor/jquery/jquery.js"></script>
+<script src="../../vendor/bootstrap/js/bootstrap.js"></script>
+<script src="../../js/logic/assets/carAssets.js"></script>
+<script src="../../vendor/bootstrap-table/bootstrap-table.js"></script>
+<script src="../../vendor/bootstrap-table/locale/bootstrap-table-zh-CN.js"></script>
+
+</html>

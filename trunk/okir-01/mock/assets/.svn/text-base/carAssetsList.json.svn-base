@@ -1,0 +1,77 @@
+[{
+  "id" : 40,
+  "code" : "020101",
+  "parentId" : 11,
+  "nameCn" : "三厢轿车",
+  "comment" : null
+},
+{
+"id" : 41,
+"code" : "020102",
+"parentId" : 11,
+"nameCn" : "两厢轿车",
+"comment" : null
+},
+{
+"id" : 42,
+"code" : "020103",
+"parentId" : 11,
+"nameCn" : "SUV车辆",
+"comment" : null
+},
+{
+"id" : 43,
+"code" : "020201",
+"parentId" : 12,
+"nameCn" : "皮卡",
+"comment" : null
+},
+{
+"id" : 44,
+"code" : "020202",
+"parentId" : 12,
+"nameCn" : "牵引车",
+"comment" : null
+},
+{
+"id" : 45,
+"code" : "020203",
+"parentId" : 12,
+"nameCn" : "载重车辆",
+"comment" : null
+},
+{
+"id" : 46,
+"code" : "020204",
+"parentId" : 12,
+"nameCn" : "特种灭火车",
+"comment" : null
+},
+{
+"id" : 47,
+"code" : "020301",
+"parentId" : 13,
+"nameCn" : "MPV",
+"comment" : null
+},
+{
+"id" : 48,
+"code" : "020302",
+"parentId" : 13,
+"nameCn" : "17座轻型客车",
+"comment" : null
+},
+{
+"id" : 49,
+"code" : "020303",
+"parentId" : 13,
+"nameCn" : "中型客车",
+"comment" : null
+},
+{
+"id" : 50,
+"code" : "020304",
+"parentId" : 13,
+"nameCn" : "大型客车",
+"comment" : null
+}]

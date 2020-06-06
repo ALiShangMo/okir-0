@@ -1,0 +1,23 @@
+[
+  {
+    "id" : 23,
+    "typeCode" : "equityType",
+    "value" : "01",
+    "display" : "私有",
+    "desc" : null
+  },
+  {
+    "id" : 24,
+    "typeCode" : "equityType",
+    "value" : "02",
+    "display" : "公产",
+    "desc" : null
+  },
+  {
+    "id" : 25,
+    "typeCode" : "equityType",
+    "value" : "03",
+    "display" : "企业产",
+    "desc" : null
+  }
+]

@@ -1,0 +1,10 @@
+.pad{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.bitian{
+
+    font-size: 20px;
+    color: #c12e2a;
+}

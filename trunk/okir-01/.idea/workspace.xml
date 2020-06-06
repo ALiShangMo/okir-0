@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f5121dc1-d173-4930-b15c-50b496a73081" name="Default" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML4 File" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>user2</find>
+      <find>content</find>
+    </findStrings>
+  </component>
+  <component name="ProjectId" id="1Vrf7FXB2EJmeptJDTiTEx1wSZf" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\ruantong\shixunmuban\okir-01\js\logic" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\前端\up\trunk\okir-01\vendor" />
+      <recent name="D:\ruantong\shixunmuban\okir-01\mock" />
+      <recent name="D:\ruantong\shixunmuban\okir-01\vendor" />
+      <recent name="F:\workspace\darun2020admin-demo\img" />
+      <recent name="F:\workspace\darun2020admin-demo\js" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>C:\Users\离殇沫\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f5121dc1-d173-4930-b15c-50b496a73081" name="Default" comment="" />
+      <created>1577970574436</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1577970574436</updated>
+      <workItem from="1577970578780" duration="1687000" />
+      <workItem from="1578015971521" duration="16886000" />
+      <workItem from="1578098516113" duration="1906000" />
+      <workItem from="1578100968437" duration="16873000" />
+      <workItem from="1578183884014" duration="8899000" />
+      <workItem from="1578204091003" duration="9801000" />
+      <workItem from="1578270646008" duration="9442000" />
+      <workItem from="1578290466963" duration="9009000" />
+      <workItem from="1578356739069" duration="11680000" />
+      <workItem from="1578376785595" duration="1718000" />
+      <workItem from="1578385404925" duration="4463000" />
+      <workItem from="1578442995765" duration="6018000" />
+      <workItem from="1578451304694" duration="4361000" />
+      <workItem from="1578463055674" duration="541000" />
+      <workItem from="1578530760061" duration="193000" />
+      <workItem from="1578530955093" duration="713000" />
+      <workItem from="1578803523064" duration="152000" />
+      <workItem from="1581991420189" duration="630000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="425" y="100" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578039161240">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="100" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1578039161240" />
+    <state x="671" y="305" key="FileChooserDialogImpl" timestamp="1578803605951">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="671" y="305" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1578803605951" />
+    <state x="767" y="283" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1578385694991">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="767" y="283" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1578385694991" />
+    <state x="727" y="327" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1578194046134">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="727" y="327" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1536.824@0.0.1536.824" timestamp="1578194046134" />
+  </component>
+</project>

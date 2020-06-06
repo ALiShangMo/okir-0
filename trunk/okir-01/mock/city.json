@@ -1,0 +1,37 @@
+[
+	{
+		"id" : 1,
+		"typeCode" : "city",
+		"value" : "01",
+		"display" : "北京",
+		"desc" : null
+	},
+	{
+		"id" : 2,
+		"typeCode" : "city",
+		"value" : "02",
+		"display" : "上海",
+		"desc" : null
+	},
+	{
+		"id" : 3,
+		"typeCode" : "city",
+		"value" : "03",
+		"display" : "天津",
+		"desc" : null
+	},
+	{
+		"id" : 4,
+		"typeCode" : "city",
+		"value" : "04",
+		"display" : "成都",
+		"desc" : null
+	},
+	{
+		"id" : 5,
+		"typeCode" : "city",
+		"value" : "05",
+		"display" : "广州",
+		"desc" : null
+	}
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "id" : 17,
+    "code ": "0401",
+     "parentId": 4,
+     "nameCn": "银行",
+     "comment": null
+  },
+  {
+    "id" : 18,
+     "code": "0402",
+    "parentId" : 4,
+    "nameCn":"金融投资",
+     "comment": null
+  },
+  {
+    "id ": 19,
+     "code": "0403",
+     "parentId": 4,
+    "nameCn": "借贷",
+     "comment": null
+  }
+]

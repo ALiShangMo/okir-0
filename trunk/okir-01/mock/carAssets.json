@@ -1,0 +1,10 @@
+[
+  {"value":"","display":"CAR020301-000000","typeCode1":"大校车","desc":"奔驰","carmodel":"FT-Y","engineinfoe":"DS7585","typeCode":""},
+  {"value":"","display":"CAR020301-000001","typeCode1":"大牵引","desc":"红旗","carmodel":"冲锋","engineinfoe":"SDSA45852","typeCode":""},
+  {"value":"","display":"CAR020301-000002","typeCode1":"SUV","desc":"路虎","carmodel":"揽胜","engineinfoe":"DS5241","typeCode":""},
+  {"value":"","display":"CAR020301-000003","typeCode1":"灭火车","desc":"奔驰","carmodel":"救火员","engineinfoe":"WDF8546","typeCode":""},
+  {"value":"","display":"CAR020301-000004","typeCode1":"抢我","desc":"东方","carmodel":"东方","engineinfoe":"AAA2525","typeCode":""},
+  {"value":"","display":"CAR020301-000005","typeCode1":"大牵引车","desc":"现代","carmodel":"赫赫","engineinfoe":"SED4584","typeCode":""},
+  {"value":"","display":"CAR020301-000006","typeCode1":"夏利","desc":"现代","carmodel":"跃进","engineinfoe":"SDS526","typeCode":""}
+
+]

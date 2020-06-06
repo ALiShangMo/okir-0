@@ -1,0 +1,10 @@
+[
+  {
+    "typecode": "city",
+    "display": "city"
+  },
+  {
+    "typecode": "packageType",
+    "display": "packageType"
+  }
+]

@@ -1,0 +1,48 @@
+[
+  {
+    "assetsnamecn": "办公椅",
+    "batchno": "N0R040203-000001-1451831235261",
+    "price": "￥100.00",
+    "currentamount": "8",
+    "targetempname": "曲苗",
+    "instocktime": "2016/1/8",
+    "id": ""
+  },
+  {
+    "assetsnamecn": "教师用电脑",
+    "batchno": "NOR010502-000003-45675123845217",
+    "price": "￥4,899.00",
+    "currentamount": "4",
+    "targetempname": "曲苗",
+    "instocktime": "2017/9/8",
+    "id": ""
+  },
+  {
+    "assetsnamecn": "HP打印机",
+    "batchno": "NOR010102-000006-15122144624328",
+    "price": "￥4980.00",
+    "currentamount": "6",
+    "targetempname": "曲苗",
+    "instocktime": "2018/4/8",
+    "id": ""
+  },
+  {
+    "assetsnamecn": "HP笔记本电脑",
+    "batchno": "NOR010102-000004-45617854937568",
+    "price": "￥2,000.00",
+    "currentamount": "6",
+    "targetempname": "曲苗",
+    "instocktime": "2018/7/2",
+    "id": ""
+  },
+  {
+    "assetsnamecn": "HP激光打印",
+    "batchno": "NOR010102-000002-14525869451238",
+    "price": "￥1,980.00",
+    "currentamount": "8",
+    "targetempname": "曲苗",
+    "instocktime": "2016/8/2",
+    "id": ""
+  }
+
+]

@@ -1,0 +1,78 @@
+[{
+  "id" : 51,
+  "code" : "030101",
+  "parentId" : 14,
+  "nameCn" : "洋房",
+  "comment" : null
+},
+{
+"id" : 52,
+"code" : "030102",
+"parentId" : 14,
+"nameCn" : "高层",
+"comment" : null
+},
+{
+"id" : 53,
+"code" : "030103",
+"parentId" : 14,
+"nameCn" : "独栋别墅",
+"comment" : null
+},
+{
+"id" : 54,
+"code" : "030104",
+"parentId" : 14,
+"nameCn" : "Loft",
+"comment" : null
+},
+{
+"id" : 55,
+"code" : "030201",
+"parentId" : 15,
+"nameCn" : "写字间",
+"comment" : null
+},
+{
+"id" : 56,
+"code" : "030202",
+"parentId" : 15,
+"nameCn" : "办公楼",
+"comment" : null
+},
+{
+"id" : 57,
+"code" : "030203",
+"parentId" : 15,
+"nameCn" : "商住两用",
+"comment" : null
+},
+{
+"id" : 58,
+"code" : "030301",
+"parentId" : 16,
+"nameCn" : "维修车间",
+"comment" : null
+},
+{
+"id" : 59,
+"code" : "030302",
+"parentId" : 16,
+"nameCn" : "露天堆场",
+"comment" : null
+},
+{
+"id" : 60,
+"code" : "030303",
+"parentId" : 16,
+"nameCn" : "低温冷藏",
+"comment" : null
+},
+{
+"id" : 61,
+"code" : "030304",
+"parentId" : 16,
+"nameCn" : "封闭式仓库",
+"comment" : null
+}
+]

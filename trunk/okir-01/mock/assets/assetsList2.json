@@ -1,0 +1,66 @@
+[
+  {
+     "id": 62,
+    "code" : "040101",
+     "parentId": 17,
+     "nameCn": "活期存款",
+    "comment" : null
+  },
+  {
+    "id": 63,
+    "code" : "040102",
+    "parentId" : 17,
+    "nameCn": "定期存款",
+    "comment" : null
+  },
+  {
+    "id": 64,
+    "code" : "040103",
+    "parentId": 17,
+    "nameCn": "理财产品",
+    "comment"  : null
+  },
+  {
+    "id" : 65,
+    "code": "040104",
+    "parentId": 17,
+    "nameCn": "协议存款",
+    "comment"  : null
+  },
+  {
+    "id": 66,
+    "code" : "040201",
+    "parentId": 18,
+    "nameCn": "债券",
+    "comment"  : null
+  },
+  {
+    "id": 67,
+    "code": "040202",
+    "parentId" : 18,
+    "nameCn": "股票",
+    "comment"  : null
+  },
+  {
+    "id": 68,
+    "code": "040203",
+    "parentId" : 18,
+    "nameCn": "基金",
+    "comment"  : null
+  },
+  {
+    "id": 69,
+    "code" : "040301",
+    "parentId" : 19,
+    "nameCn": "短期债权",
+    "comment"  : null
+  },
+  {
+    "id": 70,
+    "code": "040302",
+    "parentId" : 19,
+    "nameCn": "长期债权",
+    "comment"  : null
+  }
+
+]
