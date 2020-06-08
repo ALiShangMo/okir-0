@@ -1,0 +1,191 @@
+[
+  {
+    "id" : 1,
+    "code" : "01",
+    "parentId" : null,
+    "nameCn" : "普通资产",
+    "comment" : null
+  },
+  {
+    "id" : 5,
+    "code" : "0101",
+    "parentId" : 1,
+    "nameCn" : "办公设备",
+    "comment" : null
+  },
+  {
+    "id" : 6,
+    "code" : "0102",
+    "parentId" : 1,
+    "nameCn" : "家具",
+    "comment" : null
+  },
+  {
+    "id" : 7,
+    "code" : "0103",
+    "parentId" : 1,
+    "nameCn" : "办公耗材",
+    "comment" : null
+  },
+  {
+    "id" : 8,
+    "code" : "0104",
+    "parentId" : 1,
+    "nameCn" : "测量仪器",
+    "comment" : null
+  },
+  {
+    "id" : 9,
+    "code" : "0105",
+    "parentId" : 1,
+    "nameCn" : "电脑",
+    "comment" : null
+  },
+  {
+    "id" : 10,
+    "code" : "0106",
+    "parentId" : 1,
+    "nameCn" : "卫生洁具",
+    "comment" : null
+  },
+  {
+    "id" : 20,
+    "code" : "010101",
+    "parentId" : 5,
+    "nameCn" : "复印机",
+    "comment" : null
+  },
+  {
+    "id" : 21,
+    "code" : "010102",
+    "parentId" : 5,
+    "nameCn" : "打印机",
+    "comment" : null
+  },
+  {
+    "id" : 22,
+    "code" : "010103",
+    "parentId" : 5,
+    "nameCn" : "碎纸机",
+    "comment" : null
+  },
+  {
+    "id" : 23,
+    "code" : "010104",
+    "parentId" : 5,
+    "nameCn" : "传真机",
+    "comment" : null
+  },
+  {
+    "id" : 24,
+    "code" : "010201",
+    "parentId" : 6,
+    "nameCn" : "老板桌",
+    "comment" : null
+  },
+  {
+    "id" : 25,
+    "code" : "010202",
+    "parentId" : 6,
+    "nameCn" : "老板椅",
+    "comment" : null
+  },
+  {
+    "id" : 26,
+    "code" : "010203",
+    "parentId" : 6,
+    "nameCn" : "办公椅",
+    "comment" : null
+  },
+  {
+    "id" : 27,
+    "code" : "010204",
+    "parentId" : 6,
+    "nameCn" : "办公桌",
+    "comment" : null
+  },
+  {
+    "id" : 28,
+    "code" : "010205",
+    "parentId" : 6,
+    "nameCn" : "会议桌",
+    "comment" : null
+  },
+  {
+    "id" : 29,
+    "code" : "010206",
+    "parentId" : 6,
+    "nameCn" : "白板",
+    "comment" : null
+  },
+  {
+    "id" : 30,
+    "code" : "010301",
+    "parentId" : 7,
+    "nameCn" : "水笔（黑）",
+    "comment" : null
+  },
+  {
+    "id" : 31,
+    "code" : "010302",
+    "parentId" : 7,
+    "nameCn" : "打印纸",
+    "comment" : null
+  },
+  {
+    "id" : 32,
+    "code" : "010303",
+    "parentId" : 7,
+    "nameCn" : "硒鼓",
+    "comment" : null
+  },
+  {
+    "id" : 33,
+    "code" : "010304",
+    "parentId" : 7,
+    "nameCn" : "记事本",
+    "comment" : null
+  },
+  {
+    "id" : 34,
+    "code" : "010401",
+    "parentId" : 8,
+    "nameCn" : "激光测距仪",
+    "comment" : null
+  },
+  {
+    "id" : 35,
+    "code" : "010402",
+    "parentId" : 8,
+    "nameCn" : "声波测距仪",
+    "comment" : null
+  },
+  {
+    "id" : 36,
+    "code" : "010501",
+    "parentId" : 9,
+    "nameCn" : "台式机",
+    "comment" : null
+  },
+  {
+    "id" : 37,
+    "code" : "010502",
+    "parentId" : 9,
+    "nameCn" : "笔记本电脑",
+    "comment" : null
+  },
+  {
+    "id" : 38,
+    "code" : "010601",
+    "parentId" : 10,
+    "nameCn" : "吸尘器",
+    "comment" : null
+  },
+  {
+    "id" : 39,
+    "code" : "010602",
+    "parentId" : 10,
+    "nameCn" : "其他清扫设备",
+    "comment" : null
+  }
+]

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>不动产信息</title>
+    <link rel="stylesheet" href="../../vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../../vendor/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="../../vendor/bootstrap-table/bootstrap-table.css">
+    <link rel="stylesheet" href="../../css/assets/permanentAssets.css">
+
+
+
+</head>
+
+
+<body>
+
+<ol class="breadcrumb">
+    <li><a href="../index.html">首页</a></li>
+    <li><i class="fa fa-folder-open" aria-hidden="true"></i> 资产信息管理</li>
+    <li class="active"><i class="fa fa-university" aria-hidden="true"></i> 不动产信息</li>
+</ol>
+
+<div class="container">
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label class="control-label col-md-1">资产分类</label>
+            <div class="col-md-3">
+                <div class="row">
+                    <div class="col-md-6">
+                        <select class="form-control" id="selDictType1"></select>
+                    </div>
+                    <div class="col-md-6">
+                        <select class="form-control" id="selDictType2"></select>
+                    </div>
+                </div>
+            </div>
+                <label class="control-label col-md-1">资产名称</label>
+                <div class="col-md-2"><input class="form-control"/></div>
+                <label class="control-label col-md-1">资产编号</label>
+                <div class="col-md-2"><input class="form-control"/></div>
+            <div class="col-md-2 pad">
+                <label class="control-label col-md-5">城市</label>
+                <div class="col-md-7">
+                    <select class="form-control" id="selcity"></select>
+               </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-1">地址</label>
+            <div class="col-md-3"><input class="form-control" id="tbxAddress"/></div>
+
+            <label class="control-label col-md-1">产权类型</label>
+            <div class="col-md-2"><select class="form-control" id="selEquityType">
+            </select></div>
+
+            <label class="control-label col-md-1">所属单位</label>
+            <div class="col-md-2"><input class="form-control"/></div>
+
+            <button type="button" class="btn btn-primary col-md-2" id="btnSearch">
+                <i class="fa fa-search" aria-hidden="true"></i>检索Search</button>
+        </div>
+    </form>
+</div>
+
+<div class="container">
+    <table  id="tblResult"></table>
+</div>
+
+<div class="modal fade" id="info">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <span id="infoTitle"></span>
+            </div>
+
+            <div class="modal-body">
+                 <div class="form-horizontal">
+                    <div class="form-group">
+                    <label class="control-label col-md-3" >资产编号：</label>
+                    <div class="col-md-9"><input class="form-control" id="numzc"/>
+                    </div>
+                 </div>
+                     <div class="form-group">
+                         <label class="control-label col-md-3" >资产名称：</label>
+                         <div class="col-md-9">
+                             <div class=" input-group">
+                                 <input class="form-control" id="namezc"/>
+                                 <span class="input-group-addon bitian">*</span>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="form-group">
+                         <label class="control-label col-md-3">资产分类：</label>
+                         <div class="col-md-9">
+                             <div class="row">
+                             <div class="col-md-6">
+                                 <select class="form-control" id="sel1">
+                                     <option value="0">住宅</option>
+                                     <option value="1">办公</option>
+                                     <option value="1">仓储</option>
+                                 </select>
+                             </div>
+                             <div class="col-md-6">
+                                 <select class="form-control" id="sel2">
+                                     <option value="0">洋房</option>
+                                     <option value="1">高层</option>
+                                     <option value="2">独栋别墅</option>
+                                     <option value="3">Loft</option>
+                                     <option value="4">写字间</option>
+                                     <option value="5">办公楼</option>
+                                     <option value="6">商住两用</option>
+                                     <option value="7">维修车间</option>
+                                     <option value="8">露天堆场</option>
+                                     <option value="9">低温冷藏</option>
+                                     <option value="10">封闭式仓库</option>
+                                 </select>
+                             </div>
+                             </div>
+                         </div>
+                         </div>
+                     <div class="form-group">
+                         <label class="control-label col-md-3">所在城市：</label>
+                         <div class="col-md-9">
+                             <select class="form-control" id="sel3">
+                             <option value="0">---请选择---</option>
+                             <option value="1">上海</option>
+                             <option value="2">北京</option>
+                             <option value="3">天津</option>
+                             <option value="4">成都</option>
+                             <option value="5">广州</option>
+                         </select>
+                         </div>
+                     </div>
+                     <div class="form-group">
+                         <label class="control-label col-md-3">具体地址：</label>
+                         <div class="col-md-9">
+                             <div class=" input-group">
+                             <input class="form-control"/>
+                             <span class="input-group-addon bitian">*</span>
+                         </div>
+                         </div>
+                     </div>
+                     <div class="form-group">
+                         <label class="control-label col-md-3">出资比例：</label>
+                         <div class="col-md-9">
+                             <div class="input-group">
+                             <span class="input-group-addon">%</span>
+                             <input type="text" class="form-control" >
+                             <span class="input-group-addon bitian">*</span>
+                         </div>
+                         </div>
+                     </div>
+                     <div class="form-group">
+                         <label class="control-label col-md-3">登记所属单位：</label>
+                         <div class="col-md-9">
+                             <div class=" input-group">
+                             <input class="form-control"/>
+                             <span class="input-group-addon bitian">*</span>
+                         </div>
+                         </div>
+                     </div>
+                     <div class="form-group">
+                         <label class="control-label col-md-3">登记面积(m)：</label>
+                         <div class="col-md-9">
+                             <div class=" input-group">
+                             <input class="form-control"/>
+                             <span class="input-group-addon bitian">*</span>
+                         </div>
+                         </div>
+                     </div>
+                     <div class="form-group">
+                         <label class="control-label col-md-3">产权类型：</label>
+                         <div class="col-md-9">
+                             <select class="form-control" id="sel4">
+                                 <option value="0">私有</option>
+                                 <option value="1">公产</option>
+                                 <option value="2">企业产</option>
+                             </select>
+                         </div>
+                     </div>
+                     <div class="form-group">
+                         <label class="control-label col-md-3">其他说明：</label>
+                         <div class="col-md-9">
+                             <textarea class="form-control" rows="3"></textarea>
+                         </div>
+                     </div>
+                 </div>
+                </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" id="Save">
+                    <i class="fa fa-plus" aria-hidden="true"></i> 保存 Save</button>
+                <button type="button" class="btn btn-default" id="Cancel">
+                    <i class="fa fa-download" aria-hidden="true"></i> 取消 Cancel</button>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="info1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <span id="infoTitle1"></span>
+            </div>
+
+            <div class="modal-body">
+                <div class="form-horizontal">
+                    <div class="form-group">
+                        <label class="control-label col-md-3" >资产名称：</label>
+                        <div class="col-md-9">
+                            <input class="form-control" id="namezc1"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3">入库数量：</label>
+                        <div class="col-md-9">
+                            <div class=" input-group">
+                                <input class="form-control"/>
+                                <span class="input-group-addon bitian">*</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3">入库单价：</label>
+                        <div class="col-md-9">
+                            <div class="input-group">
+                                <span class="input-group-addon">￥</span>
+                                <input type="text" class="form-control" >
+                                <span class="input-group-addon bitian">*</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3">金额合计：</label>
+                        <div class="col-md-9">
+                            <div class="input-group">
+                                <span class="input-group-addon">￥</span>
+                                <input type="text" class="form-control" >
+                                <span class="input-group-addon bitian">*</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3">入库时间：</label>
+                        <div class="col-md-9">
+                            <div class="input-group">
+                                <input type="text" class="form-control" >
+                                <span class="input-group-addon bitian">*</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3">产权类型：</label>
+                        <div class="col-md-9">
+                            <select class="form-control" id="sel5">
+                                <option value="0">私有</option>
+                                <option value="1">公产</option>
+                                <option value="2">企业产</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3">备注说明：</label>
+                        <div class="col-md-9">
+                            <textarea class="form-control" rows="3"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" id="Instock">
+                    <i class="fa fa-plus" aria-hidden="true"></i> 入库 Instock</button>
+                <button type="button" class="btn btn-default" id="Cancel2">
+                    <i class="fa fa-download" aria-hidden="true"></i> 取消 Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+<div class="container">
+<div class="btn-group " id="toolbar">
+    <button class="btn btn-success" id="btnAdd">
+        <i class="fa fa-plus" aria-hidden="true"></i> 新增资产 Add</button>
+    <button class="btn btn-primary" id="btnInst">
+        <i class="fa fa-download" aria-hidden="true"></i> 资产入库 Instock</button>
+    <button  class="btn btn-warning" id="btnEdit">
+        <i class="fa fa-pencil-square-o" aria-hidden="true"></i> 编辑资产 Edit</button>
+</div>
+</div>
+</body>
+
+<script src="../../vendor/jquery/jquery.js"></script>
+<script src="../../js/logic/assets/permanentAssets.js"></script>
+<script src="../../vendor/bootstrap-table/bootstrap-table.js"></script>
+<script src="../../vendor/bootstrap/js/bootstrap.js"></script>
+<script src="../../vendor/bootstrap-table/locale/bootstrap-table-zh-CN.js"></script>
+</html>

@@ -1,0 +1,6 @@
+[
+  {"id":"15","typeCode":"powerType","value":"1","display":"汽油","desc":"Null"},
+  {"id":"16","typeCode":"powerType","value":"2","display":"柴油","desc":"Null"},
+  {"id":"17","typeCode":"powerType","value":"3","display":"纯电","desc":"Null"},
+  {"id":"18","typeCode":"powerType","value":"4","display":"混动","desc":"Null"}
+]

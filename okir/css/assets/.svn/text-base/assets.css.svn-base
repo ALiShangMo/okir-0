@@ -1,0 +1,11 @@
+.jinrong{
+    padding: 0px;
+}
+.anniu{
+    padding:20px;
+    margin-left: 20px;
+}
+.xin{
+    color: #9f191f;
+    font-size: 20px;
+}

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>车辆流转</title>
+
+    <link rel="stylesheet" href="../../vendor/bootstrap/css/bootstrap.css">
+
+    <link rel="stylesheet" href="../../vendor/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="../../vendor/bootstrap-table/bootstrap-table/bootstrap-table.css">
+    <link rel="stylesheet" href="../../css/carTrans.css">
+
+
+</head>
+<body>
+<ol class="breadcrumb">
+    <li><a href="#">主页</a></li>
+    <li>
+        <i class="fa fa-ils" aria-hidden="true"></i>
+        资产流转管理
+    </li>
+    <li class="active">
+        <i class="fa fa-ils" aria-hidden="true"></i>
+        车辆资产流转管理</li>
+</ol>
+
+<div class="container">
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label class="control-label col-md-1">资产操作:</label>
+            <div class="col-md-2">
+                    <select class="form-control" id="selectBtn">
+
+                        <option value="1">资产领用</option>
+                        <option value="2">资产转移</option>
+                    </select>
+            </div>
+            <label class="control-label col-md-1">资产名称:</label>
+            <div class="col-md-3">
+                <input class="form-control"/>
+            </div>
+            <label class="control-label col-md-1">批次编号:</label>
+            <div class="col-md-2">
+                <input class="form-control"/>
+            </div>
+
+            <button type="button" class="btn btn-primary" id="btnSearch">
+                <i class="fa fa-search" aria-hidden="true"></i>
+                搜索Search</button>
+        </div>
+
+    </form>
+
+
+    <div id="outInstockBox">
+        <div class="form-group">
+            <span>可转移资产列表：</span>
+        </div>
+        <table id="tblResults">
+
+        </table>
+    </div>
+    <div id="transferBox">
+        <div class="form-group">
+            <span>可领用资产列表：</span>
+        </div>
+        <table id="tblResults2">
+
+        </table>
+    </div>
+
+</div>
+
+<div class="modal fade" id="info">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header" id="infoTitle">
+                <div class="fa fa-bar-chart">
+                    资产流转-资产领用
+                </div>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label class="control-label col-md-3">资产信息：</label>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control" placeholder="CAR020202-00004" aria-describedby="sizing-addon1" Disabled>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-md-3">操作数量：</label>
+                        <div class="col-md-8">
+                            <div class="input-group">
+                                <input class="form-control " aria-describedby="basic-addon">
+                                <span class="input-group-addon star">
+                                    *
+                                </span>
+                                </input>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-md-3">单价：</label>
+                        <div class="col-md-8">
+                            <div class="input-group">
+                                <span class="input-group-addon" id="sizing-addon1">￥</span>
+                                <input type="text" class="form-control" placeholder="50000" aria-describedby="sizing-addon1" Disabled>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-md-3">合计总价：</label>
+                        <div class="col-md-8">
+                            <div class="input-group">
+                                <span class="input-group-addon" id="sizing-addon2">￥</span>
+                                <input class="form-control" Disabled/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-md-3">操作时间：</label>
+                        <div class="col-md-8">
+                            <div class="input-group">
+                                <input class="form-control " placeholder="2018/08/07" aria-describedby="basic-addon">
+                                <span class="input-group-addon star">
+                                    *
+                                </span>
+                                </input>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group" >
+                        <label class="control-label col-md-3" id="person">当前持有人：</label>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control" placeholder="君迪" aria-describedby="sizing-addon1" Disabled id="people">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-md-3">领用人：</label>
+                        <div class="col-md-8">
+                            <div class="input-group">
+                                <select class="form-control" >
+                                    <option>BD0020003楚风韩</option>
+                                    <option>BD0020004离殇沫</option>
+                                </select>
+                                <span class="input-group-addon star">
+                                    *
+                                </span>
+                                </input>
+                                </input>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-md-3">备注说明：</label>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control" aria-describedby="sizing-addon1" >
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">
+                    <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                    &nbsp&nbsp出库&nbsp&nbspCheckout</button>
+                <button type="button" class="btn btn-group">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                    &nbsp&nbsp取消&nbsp&nbspCancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+<script src="../../vendor/jquery/jquery.js"></script>
+<script src="../../vendor/bootstrap/js/bootstrap.js"></script>
+
+<script src="../../vendor/bootstrap-table/bootstrap-table/bootstrap-table.js"></script>
+<script src="../../vendor/bootstrap-table/bootstrap-table/locale/bootstrap-table-zh-CN.js"></script>
+<script src="../../js/baseInfo/carTrans.js"></script>
+
+</html>

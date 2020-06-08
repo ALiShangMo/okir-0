@@ -1,0 +1,13 @@
+[
+  {" code":"01","nameCn":"普通资产","parentId":"—"," comment":"—"},
+  {" code":"02","nameCn":"车辆","parentId":"—"," comment":"—"},
+  {" code":"03","nameCn":"不动产","parentId":"—"," comment":"—"},
+  {" code":"04","nameCn":"金融资产","parentId":"—"," comment":"—"},
+  {" code":"05","nameCn":"办公设备","parentId":"普通资产"," comment":"—"},
+  {" code":"06","nameCn":"家具","parentId":"普通资产"," comment":"—"},
+  {" code":"07","nameCn":"办公耗材","parentId":"普通资产"," comment":"—"},
+  {" code":"08","nameCn":"测量仪器","parentId":"普通资产"," comment":"—"},
+  {" code":"09","nameCn":"电脑","parentId":"普通资产"," comment":"—"},
+  {" code":"10","nameCn":"卫生洁具","parentId":"普通资产"," comment":"—"}
+
+]

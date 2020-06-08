@@ -1,0 +1,18 @@
+[
+  {
+    "typecode": "city",
+    "display": "人力资源部"
+  },
+  {
+    "typecode": "packageType",
+    "display": "开发部"
+  },
+  {
+    "typecode": "packageType",
+    "display": "行政事业部"
+  },
+  {
+    "typecode": "packageType",
+    "display": "财务部"
+  }
+]

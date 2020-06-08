@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>公司职员管理</title>
+    <link rel="stylesheet" href="../../vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../../vendor/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="../../vendor/bootstrap-table/bootstrap-table.css">
+
+
+
+</head>
+<body>
+
+<ol class="breadcrumb">
+    <li><a href="index.html">首页</a></li>
+    <li><i class="fa fa-bars" aria-hidden="true"></i> 基础信息管理</li>
+    <li class="active"><i class="fa fa-briefcase" aria-hidden="true"></i> 公司职员管理</li>
+</ol>
+<div class="container">
+<form class="form-horizontal">
+    <div class="form-group">
+        <label class="control-label col-md-1">姓名：</label>
+        <div class="col-md-2"><input class="form-control"/></div>
+        <label class="control-label col-md-2">所在部门：</label>
+        <div class="col-md-3">
+            <select class="form-control" id="selDictType"></select>
+        </div>
+        <button type="button" class="btn btn-primary" id="btnSearch">
+            <i class="fa fa-search" aria-hidden="true"></i>检索search</button>
+    </div>
+</form>
+</div>
+<div class="container">
+<table class="tblResult" id="tblResult"> </table>
+</div>
+</body>
+
+<script src="../../vendor/jquery/jquery.js"></script>
+<script src="../../js/logic/baseInfo/employee.js"></script>
+<script src="../../vendor/bootstrap-table/bootstrap-table.js"></script>
+<script src="../../vendor/bootstrap-table/locale/bootstrap-table-zh-CN.js"></script>
+</html>

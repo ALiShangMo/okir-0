@@ -1,0 +1,7 @@
+.caozuo{
+    padding: 0px;
+}
+.xin{
+    color: #9f191f;
+    font-size: 20px;
+}

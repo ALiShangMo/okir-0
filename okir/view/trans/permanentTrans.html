@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>不动产流转管理</title>
+    <link rel="stylesheet" href="../../vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../../vendor/bootstrap-table/bootstrap-table.css">
+    <link rel="stylesheet" href="../../vendor/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="../../css/trans/permanentTrans.css">
+
+
+</head>
+<body>
+<ol class="breadcrumb">
+    <li><a href="../index.html">首页</a></li>
+    <li><i class="fa fa-exchange" aria-hidden="true"></i> 资产流转管理</li>
+    <li class="active"><i class="fa fa-exchange" aria-hidden="true"></i> 不动产流转管理</li>
+</ol>
+
+<div class="container">
+    <form class="form-horizontal">
+        <div class="form-group pad">
+            <label class="control-label col-md-1 pad">资产操作</label>
+            <div class="col-md-2 pad">
+                <select class="form-control" id="trans">
+                    <option value="0">资产领用</option>
+                    <option value="1">资产转移</option>
+                </select>
+            </div>
+            <label class="control-label col-md-1 pad">资产名称</label>
+            <div class="col-md-2 pad">
+                <input class="form-control"/>
+            </div>
+            <label class="control-label col-md-1 pad">批次编号</label>
+            <div class="col-md-2 pad">
+                <input class="form-control"/>
+            </div>
+            <button type="button" class="btn btn-primary col-md-2" id="btnSearch">
+                <i class="fa fa-search" aria-hidden="true"></i>检索Search</button>
+        </div>
+    </form>
+</div>
+
+<div id="lingyong" class="container">
+    <table id="tblly"></table>
+</div>
+
+<div id="zhuanyi" class="container">
+    <table id="tblzy"></table>
+</div>
+
+<div class="modal fade" id="info">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <span id="infoTitle"></span>
+            </div>
+
+            <div class="modal-body">
+                <div class="form-horizontal">
+                    <div class="form-group">
+                        <label class="control-label col-md-3" >资产信息：</label>
+                        <div class="col-md-9"><input class="form-control" id="numzc"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3" >操作数量：</label>
+                        <div class="col-md-9">
+                            <div class=" input-group">
+                                <input class="form-control" id="namezc"/>
+                                <span class="input-group-addon red">*</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3">单价：</label>
+                        <div class="col-md-9">
+                            <div class="input-group">
+                                <span class="input-group-addon">￥</span>
+                                <input type="text" class="form-control"  id="price">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3">合计总价：</label>
+                        <div class="col-md-9">
+                            <div class="input-group">
+                                <span class="input-group-addon">￥</span>
+                                <input type="text" class="form-control" >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3">操作时间：</label>
+                        <div class="col-md-9">
+                            <div class=" input-group">
+                                <input class="form-control" id="date"/>
+                                <span class="input-group-addon bitian red">*</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3">领用人：</label>
+                        <div class="col-md-9">
+                            <div class="input-group">
+                                <select class="form-control" id="per">
+                                    <option value="0">楚风韩</option>
+                                    <option value="1">刘青</option>
+                                    <option value="2">王丹</option>
+                                </select>
+                                <span class="input-group-addon red">*</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3">备注说明：</label>
+                        <div class="col-md-9">
+                            <textarea class="form-control" rows="3"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" id="Save">
+                    <i class="fa fa-plus" aria-hidden="true"></i> 保存 Save</button>
+                <button type="button" class="btn btn-default" id="Cancel">
+                    <i class="fa fa-download" aria-hidden="true"></i> 取消 Cancel</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="modal fade" id="info1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <span id="infoTitle1"></span>
+            </div>
+
+            <div class="modal-body">
+                <div class="form-horizontal">
+                    <div class="form-group">
+                        <label class="control-label col-md-3" >资产信息：</label>
+                        <div class="col-md-9"><input class="form-control" id="numzc1"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3" >操作数量：</label>
+                        <div class="col-md-9">
+                            <div class=" input-group">
+                                <input class="form-control" id="namezc1"/>
+                                <span class="input-group-addon red">*</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3">单价：</label>
+                        <div class="col-md-9">
+                            <div class="input-group">
+                                <span class="input-group-addon">￥</span>
+                                <input type="text" class="form-control" id="price1" >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3">合计总价：</label>
+                        <div class="col-md-9">
+                            <div class="input-group">
+                                <span class="input-group-addon">￥</span>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3">操作时间：</label>
+                        <div class="col-md-9">
+                            <div class=" input-group">
+                                <input class="form-control" id="date1"/>
+                                <span class="input-group-addon bitian red">*</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3">当前持有人：</label>
+                        <div class="col-md-9">
+                            <input class="form-control" id="per1"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3">领用人：</label>
+                        <div class="col-md-9">
+                            <div class="input-group">
+                                <select class="form-control" id="per2"></select>
+                                <span class="input-group-addon red">*</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-md-3">备注说明：</label>
+                        <div class="col-md-9">
+                            <textarea class="form-control" rows="3"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" id="Save1">
+                    <i class="fa fa-plus" aria-hidden="true"></i> 保存 Save</button>
+                <button type="button" class="btn btn-default" id="Cancel1">
+                    <i class="fa fa-download" aria-hidden="true"></i> 取消 Cancel</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+
+
+<script src="../../vendor/jquery/jquery.js"></script>
+<script src="../../js/logic/trans/permanentTrans.js"></script>
+<script src="../../vendor/bootstrap/js/bootstrap.js"></script>
+<script src="../../vendor/bootstrap-table/bootstrap-table.js"></script>
+<script src="../../vendor/bootstrap-table/locale/bootstrap-table-zh-CN.js"></script>
+</html>

@@ -1,0 +1,22 @@
+.top{
+    background:url("../img/2.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+
+}
+.login-box{
+    width: 600px;
+    height: 227px;
+    margin-top:300px;
+    margin-left: 900px;
+
+    border-radius: 7px;
+    box-shadow:-8px 9px 10px 7px rgb(138, 138, 138);
+    opacity:.85;
+}
+.btn{
+    margin-left: 200px;
+}
+.panel-footer{
+    height: 55px;
+}

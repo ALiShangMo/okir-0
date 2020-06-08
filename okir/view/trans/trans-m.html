@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>金融资产流转</title>
+    <link rel="stylesheet" href="../../vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../../vendor/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="../../css/trans/trans.css">
+    <link rel="stylesheet" href="../../vendor/bootstrap-table/bootstrap-table.css">
+
+</head>
+<body>
+<ol class="breadcrumb">
+    <li><a href="../index.html">首页</a></li>
+    <li><i class="fa fa-inbox" aria-hidden="true"></i>资产流转管理</li>
+    <li class="active"><i class="fa fa-jpy" aria-hidden="true"></i>金融资产流转</li>
+</ol>
+<div class="container">
+<form class="form-horizontal">
+    <div class="form-group">
+
+        <label class="control-label col-md-1 caozuo" >资产操作：</label>
+
+            <div class="col-md-2"><select  class="form-control" id="selTransType">
+                <option value="1">资产领用</option>
+                <option value="2">资产转移</option>
+            </select></div>
+
+
+
+        <label class="control-label col-md-2">资产名称：</label>
+            <div class="col-md-2"><input  class="form-control"></div>
+
+
+        <label class="control-label col-md-2">批次编号：</label>
+            <div class="col-md-2"><input  class="form-control"></div>
+
+        <div class="col-md-1">
+            <button class="btn btn-primary" id="btnSearch"><i class="fa fa-search" aria-hidden="true"></i>检索</button></div>
+    </div>
+</form>
+
+</div>
+
+<div  class="container" id="outInstockBox">
+    <div class="form-group">
+        <span>可领用资产列表</span>
+    </div>
+    <table id="tblResult"></table>
+</div>
+
+<div class="container" id="transferBox">
+    <div class="form-group">
+        <span>可转移资产列表</span>
+    </div>
+    <table id="tblResult2"></table>
+</div>
+
+<div class="modal fade" id="info">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header"><span id="infoTitle" >资产流转-资产领用</span></div>
+
+            <div class="modal-body">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">资产信息：</label>
+                        <div class="col-md-6">
+                            <input  type="text" class="form-control"  aria-describedby="sizing-addon1" id="assetsnamecnFor" disabled>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">操作数量：</label>
+                        <div class="col-md-6">
+                            <div class="input-group ">
+                                <input  class="form-control">
+                                <span class="input-group-addon xin" >*</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                    <label class="col-md-3 control-label">单价:</label>
+                    <div class="col-md-6">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-jpy" aria-hidden="true"></i></span>
+                            <input class="form-control">
+
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">合计总价:</label>
+                        <div class="col-md-6">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-jpy" aria-hidden="true"></i></span>
+                                <input class="form-control">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">操作时间:</label>
+                        <div class="col-md-6">
+                            <div class="input-group">
+                                <select class="form-control">
+                                    <option value="0">2018/08/0</option>
+                                </select>
+                                <span class="input-group-addon xin" >*</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">领用人：</label>
+                        <div class="col-md-6">
+                            <div class="input-group">
+                                <select class="form-control">
+                                    <option value="0">娜娜</option>
+                                    <option value="1">芳芳</option>
+                                    <option value="2">娇娇</option>
+                                </select>
+                                <span class="input-group-addon xin" >*</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">备注说明:</label>
+                        <div class="col-md-6">
+                            <textarea class="form-control" rows="3"></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer"></div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="info1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header"><span id="infoTitle1" >资产流转-资产转移</span></div>
+
+            <div class="modal-body">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">资产信息：</label>
+                        <div class="col-md-6">
+                            <input  type="text" class="form-control"  aria-describedby="sizing-addon1" id="assetsnamecnFor1" disabled>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">操作数量：</label>
+                        <div class="col-md-6">
+                            <div class="input-group ">
+                                <input  class="form-control">
+                                <span class="input-group-addon xin" >*</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">单价:</label>
+                        <div class="col-md-6">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-jpy" aria-hidden="true"></i></span>
+                                <input class="form-control">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">合计总价:</label>
+                        <div class="col-md-6">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-jpy" aria-hidden="true"></i></span>
+                                <input class="form-control">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">操作时间:</label>
+                        <div class="col-md-6">
+                            <div class="input-group">
+                                <select class="form-control">
+                                    <option value="0">2018/08/0</option>
+                                </select>
+                                <span class="input-group-addon xin" >*</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">当前持有人：</label>
+                        <div class="col-md-6">
+                            <input  type="text" class="form-control"  placeholder="曲苗" aria-describedby="sizing-addon1"  disabled>
+                            </div>
+                        </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">备注说明:</label>
+                        <div class="col-md-6">
+                            <textarea class="form-control" rows="3"></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer"></div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="../../vendor/jquery/jquery.js"></script>
+<script src="../../js/logic/trans/trans-mqy.js"></script>
+
+<script src="../../vendor/bootstrap/js/bootstrap.js"></script>
+<script src="../../vendor/bootstrap-table/bootstrap-table.js"></script>
+<script src="../../vendor/bootstrap-table/locale/bootstrap-table-zh-CN.js"></script>
+</html>

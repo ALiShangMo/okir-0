@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>系统用户</title>
+    <link rel="stylesheet" href="../../vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../../vendor/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="../../vendor/bootstrap-table/bootstrap-table.css">
+
+
+
+</head>
+<body>
+<ol class="breadcrumb">
+    <li><a href="../index.html">主页</a></li>
+    <li ><i class="fa fa-map" aria-hidden="true"></i>基础信息管理</li>
+    <li class="active"><i class="fa fa-server" aria-hidden="true"></i>系统用户管理</li>
+</ol>
+<form class="form-horizontal" >
+    <div class="form-group">
+        <label class="control-label col-md-2">用户名:</label>
+        <div class="col-md-2"><input class="form-control" ></div>
+
+        <label class="control-label col-md-1">用户权限</label>
+        <div class="col-md-3"><select class="form-control" id="selDictType"></select></div>
+
+        <button type="button" class="btn btn-primary" id="btnSearch">
+            <i class="fa fa-search" aria-hidden="true"></i>检索search</button>
+    </div>
+</form>
+<div class="container">
+    <table id="tblResult"></table>
+</div>
+
+</body>
+<script src="../../vendor/jquery/jquery.js"></script>
+<script src="../../js/logic/baseInfo/sysUser.js"></script>
+<script src="../../vendor/bootstrap-table/bootstrap-table.js"></script>
+<script src="../../vendor/bootstrap-table/locale/bootstrap-table-zh-CN.js"></script>
+</html>

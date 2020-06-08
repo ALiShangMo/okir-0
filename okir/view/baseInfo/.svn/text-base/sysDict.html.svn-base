@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数据字典</title>
+    <link rel="stylesheet" href="../../vendor/bootstrap/css/bootstrap.css">
+
+    <link rel="stylesheet" href="../../vendor/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="../../vendor/bootstrap-table/bootstrap-table.css">
+
+
+</head>
+<body>
+  <ol class="breadcrumb">
+       <li><a href="#">主页</a></li>
+       <li>基础信息管理</li>
+       <li class="active">
+           <i class="fa fa-book" aria-hidden="true"></i>
+       数据字典管理</li>
+  </ol>
+
+   <form class="form-horizontal">
+       <div class="form-group">
+           <label class="control-label col-md-1">字典项目</label>
+           <div class="col-md-2"><input class="form-control"/></div>
+
+
+           <label class="control-label col-md-1">所属类别</label>
+           <div class="col-md-3">
+              <select class="form-control" id="selIDictType"></select>
+           </div>
+
+           <button type="button" class="btn btn-success" id="btnSearch">
+               <i class="fa fa-search" aria-hidden="true"></i>
+               搜索</button>
+       </div>
+   </form>
+  <table id="tblResult">
+
+  </table>
+
+
+
+</body>
+
+<script src="../../vendor/jquery/jquery.js"></script>
+<script src="../../js/logic/baseInfo/sysDict.js"></script>
+<script src="../../vendor/bootstrap-table/bootstrap-table.js"></script>
+<script src="../../vendor/bootstrap-table/locale/bootstrap-table-zh-CN.js"></script>
+
+
+</html>

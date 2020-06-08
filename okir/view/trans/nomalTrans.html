@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>资产转移</title>
+    <link rel="stylesheet" href="../../vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../../vendor/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="../../vendor/bootstrap-table/bootstrap-table.css">
+    <link rel="stylesheet" href="../../css/trans/xjl.css">
+
+
+
+</head>
+<body>
+<ol class="breadcrumb">
+    <li><a href="index.html">首页</a></li>
+    <li><i class="fa fa-quora" aria-hidden="true"></i>资产信息管理</li>
+    <li class="active"><i class="fa fa-bandcamp" aria-hidden="true"></i>普通资产信息</li>
+</ol>
+<div class="container">
+<form class="form-horizontal">
+    <div class="form-group">
+        <label class="control-label col-md-1">资产操作</label>
+        <div class="col-md-2"> <select class="form-control" id="assetop">
+            <option value="0">--资产转移--</option>
+            <option value="1">--资产领用--</option>
+        </select></div>
+        <label class="control-label col-md-1">资产名称</label>
+        <div class="col-md-2"><input class="form-control"/></div>
+        <label class="control-label col-md-1">批次编号</label>
+        <div class="col-md-2"><input class="form-control"/></div>
+        <button type="button" class="btn btn-primary" id="btnSearch">
+            <i class="fa fa-search" aria-hidden="true"></i>检索search</button>
+        </button>
+    </div>
+</form>
+    <div class="container">
+        <label class="control-label zican" >可转移资产列表</label>
+    </div>
+</div>
+<div class="container" id="outInstockBox">
+    <table id="tb1Result"></table>
+</div>
+
+<div class="container" id="transferBox">
+    <table id="tb1Result1"></table>
+</div>
+
+<div class="modal fade" id="infotr">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header"><span id="infotra"></span></div>
+            <div class="modal-body">
+                <div class="form-horizontal">
+                    <div class="form-group">
+                        <label class="control-label col-md-3" >资产信息</label>
+                        <div class="col-md-9">
+                            <input  class="form-control" id="tbxAssetsInfo"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3" >操作数量</label>
+                        <div class="col-md-9">
+                            <div class="input-group">
+                                <input  class="form-control" id="tbxCount"/>
+                                <span class="input-group-addon red">*</span></div>
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3">单价</label>
+                        <div class="col-md-9">
+                            <div class="input-group">
+                                <span class="input-group-addon ">¥</span>
+                                <input  class="form-control" id="tbxPrice"/>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3">合计总价</label>
+                        <div class="col-md-9">
+                            <div class="input-group">
+                                <span class="input-group-addon ">¥</span>
+                                <input  class="form-control" id="tbxTotalPrice"/></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3">操作时间</label>
+                        <div class="col-md-9">
+                            <div class="input-group">
+                                <input  class="form-control" id="tbxTransDate"/>
+                                <span class="input-group-addon red">*</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3">当前持有人</label>
+                        <div class="col-md-9">
+                            <input  class="form-control" id="tbxHandlerEmp"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3">领用人</label>
+                        <div class="col-md-9">
+                            <select class="form-control" >
+                                <option value="0">BD0020003 楚风韩</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3">其他说明</label>
+                        <div class="col-md-9">
+                            <textarea class="form-control" rows="3"></textarea>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn btn-success">
+                    <i class="fa fa-exchange" aria-hidden="true"></i>转移 shift</button>
+                <button class="btn btn-default">
+                    <i class="fa fa-times" aria-hidden="true"></i>取消 Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="infoc">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header"><span id="infoch"></span></div>
+            <div class="modal-body">
+                <div class="form-horizontal">
+                    <div class="form-group">
+                        <label class="control-label col-md-3" >资产信息</label>
+                        <div class="col-md-9">
+                            <input  class="form-control" id="tbxAssetsIn"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3" >操作数量</label>
+                        <div class="col-md-9">
+                            <div class="input-group">
+                                <input  class="form-control" id="tbxCoun"/>
+                                <span class="input-group-addon red">*</span></div>
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3">单价</label>
+                        <div class="col-md-9">
+                            <div class="input-group">
+                                <span class="input-group-addon ">¥</span>
+                                <input  class="form-control" id="tbxPric"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3">合计总价</label>
+                        <div class="col-md-9">
+                            <div class="input-group">
+                                <span class="input-group-addon ">¥</span>
+                                <input  class="form-control" id="tbxTotalPric"/></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3">操作时间</label>
+                        <div class="col-md-9">
+                            <div class="input-group">
+                                <input  class="form-control" id="tbxTransDat"/>
+                                <span class="input-group-addon red">*</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3">领用人</label>
+                        <div class="col-md-9">
+                            <select class="form-control" >
+                                <option value="0">BD0020003 楚风韩</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3">其他说明</label>
+                        <div class="col-md-9">
+                            <textarea class="form-control" rows="3"></textarea>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn btn-success">
+                    <i class="fa fa-external-link" aria-hidden="true"></i>出库 Checkout</button>
+                <button class="btn btn-default">
+                    <i class="fa fa-times" aria-hidden="true"></i>取消 Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../../vendor/jquery/jquery.js"></script>
+<script src="../../js/logic/trans/normalTrans.js"></script>
+<script src="../../vendor/bootstrap/js/bootstrap.js"></script>
+<script src="../../vendor/bootstrap-table/bootstrap-table.js"></script>
+<script src="../../vendor/bootstrap-table/locale/bootstrap-table-zh-CN.js"></script>
+</html>
